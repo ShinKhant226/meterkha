@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" class="bg-light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Meter Kha </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static',filename='cover.css') }}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="text-center bg-light text-dark">
+    <div class="cover-container d-flex w-100 h-100 p-1 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand"><a href="{{ url_for('index') }}"> <img src="{{ url_for('static',filename='logo.png') }}" alt="" width="110"></a></h3>
+      <nav class="nav nav-masthead justify-content-center" style="padding-top:34px;">
+        <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#ffdd00 !important;border-radius: 6px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/shinmaung"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>           
+      </nav>
+    </div>
+  </header><br>
+  <main role="main" class="inner cover">
+    <div class="row ">
+        <div class="col-md-4 order-md-2 mb-4">
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">သုံးစွဲမီတာယူနစ်</h6>
+              </div>
+              <span class="text-muted">{{data[0]}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">ဝန်ဆောင်ခ</h6>
+              </div>
+              <span class="text-muted">{{data[4]}} Ks</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">မြင်းကောင်ရေ</h6>
+              </div>
+              <span class="text-muted">0 Ks</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">ကျသင့်ငွေ</h6>
+                </div>
+                <span class="text-muted">{{data[3]}} Ks</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">ကင်းလွတ်ခွင့်</h6>
+                </div>
+                <span class="text-muted">0 Ks</span>
+              </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <h6 class="my-0 text-left">စုစုပေါင်း ကျသင့်ငွေ</h6>
+              <strong>{{data[1]}} Ks</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8 order-md-1">
+            <table class="table table-sm table-bordered text-left">
+                <thead>
+                  <tr>
+                    <th scope="col">မီတာအမှတ်</th>
+                    <th scope="col">နှုန်းထား</th>
+                    <th scope="col">သင့်ငွေ (ကျပ်)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>၁ မှ ၅၀၀ယူနစ်</td>
+                    <td>၁၂၅ ကျပ်</td>
+                    <td class="text-right">{{data[2][0]}}</td>
+                  </tr>
+                  <tr>
+                    <td>၅၀၁မှ ၅၀၀၀ယူနစ်</td>
+                    <td>၁၃၅ ကျပ်</td>
+                    <td class="text-right">{{data[2][1]}}</td>
+                  </tr>
+                  <tr>
+                    <td>၅၀၀၁မှ ၁၀၀၀၀ယူနစ်</td>
+                    <td>၁၄၅ ကျပ်</td>
+                    <td class="text-right">{{data[2][2]}}</td>
+                  </tr>
+                  <tr>
+                    <td>၁၀၀၀၁မှ ၂၀၀၀၀ယူနစ်</td>
+                    <td>၁၅၅ ကျပ်</td>
+                    <td class="text-right">{{data[2][3]}}</td>
+                  </tr>
+                  <tr>
+                    <td>၂၀၀၀၁မှ ၅၀၀၀၀ယူနစ်</td>
+                    <td>၁၆၅ ကျပ်</td>
+                    <td class="text-right">{{data[2][4]}}</td>
+                  </tr>
+                  <tr>
+                    <td>၅၀၀၀၁မှ ၁၀၀၀၀၀ယူနစ်</td>
+                    <td>၁၇၅ ကျပ်</td>
+                    <td class="text-right">{{data[2][5]}}</td>
+                  </tr>
+                  <tr>
+                    <td>၁၀၀၀၀၁ နှင့်အထက်</td>
+                    <td>၁၈၀ ကျပ်</td>
+                    <td class="text-right">{{data[2][6]}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">မီတာဝန်ဆောင်ခ</td>
+                    <td class="text-right">{{data[4]}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">မြင်းကောင်ရေကြေး</td>
+                    <td class="text-right">0</td>
+                  </tr>
+                  <tr class="bg-danger text-white">
+                    <td colspan="2">ကျသင့်ငွေ စုစုပေါင်း</td>
+                    <td class="text-right">{{data[1]}}</td>
+                  </tr>
+                </tbody>
+              </table>        
+        </div>
+      </div> 
+      <div class="alert alert-dark" role="alert">
+        ယခု တွက်ချက်ထားမှုတွေ မီတာဝန်ဆောင်ခ နှင့် အခြားသော နှုန်းထားများအား ပါဝင်တွက်ချက်ခြင်း မရှိပါ။ အသေးစိတ်အား <a class="text-info" href="https://yesc.org.mm/industrial-commercial-meters">YESC</a> ၏စာမျက်နှာတွင် ကြည့်ရှုနိုင်ပါသည်။
+      </div>     
+  </main>
+
+  <footer class="mastfoot mt-auto text-dark">
+    <div class="inner">
+      <p>Develope by <a href="https://twitter.com/ShinKhantMaung4" class="text-dark">@shinkhantmaung</a>.</p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

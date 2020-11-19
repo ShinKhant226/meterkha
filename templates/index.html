@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Meter Kha </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static',filename='cover.css') }}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-1 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand"><img src="{{ url_for('static',filename='logo.png') }}" alt="" width="110"></h3>
+      <nav class="nav nav-masthead justify-content-center" style="padding-top:34px;">
+        <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#ffdd00 !important;border-radius: 6px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/shinmaung"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>         
+        </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+    <!-- <h1 class="cover-heading"><img src="{{ url_for('static',filename='logo.png') }}" alt="" width="200"></h1> -->
+    <p class="lead">သုံးစွဲလျှပ်စစ်ယူနစ် အပေါ်မူတည်၍ ကျသင့်ငွေပမာဏအား လျှပ်စစ်နှင့်စွမ်းအင်ဝန်ကြီးဌာနမှ အသစ်ထုတ်ပြန်ထားသော မီတာခနှုန်းထားသစ်များ ဖြင့် တွက်ချက်နိုင်ပါသည်။</p>
+    <br>  
+    <p class="lead">
+      <form action="/catulate" method="POST">
+        <div class="input-group">
+          <input type="text" class="form-control" name="unit" placeholder="သုံးစွဲ မီတာယူနစ် ပမာဏအား ရိုက်ထည့်ပါ။" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+          <div class="input-group-append" id="button-addon4">
+            <button class="btn btn-primary" type="submit" name="unbusiness">အိမ်သုံး</button>
+            <button class="btn btn-info" type="submit" name="business">လုပ်ငန်းသုံး</button>
+          </div>
+        </div>        
+      </form>
+
+    </p>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Develope by <a href="https://twitter.com/ShinKhantMaung4">@shinkhantmaung</a>.</p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
